@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up and Down</title>
+    <style></style>
+    <script>
+        function initialize()
+        {
+            displaydiv = document.getElementById("display");
+            num = 0;
+            displaydiv.innerHTML = num;
+        }
+        function addOne()
+        {
+            num++;
+            update();
+        }
+        function subtractOne()
+        {
+            num--;
+            update();
+        }
+        function update()
+        {
+            displaydiv.innerHTML = num;
+        }
+
+    </script>
+</head>
+<body onload = "initialize();">
+    <div id="display">
+
+    </div>
+    <button onclick = "addOne();">Add</button>
+    <button onclick = "subtractOne();">Subtract</button>
+</body>
+</html>
